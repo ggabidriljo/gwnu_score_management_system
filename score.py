@@ -28,6 +28,10 @@ class Score:
     @property
     def math(self):
         return self._math
+
+    @property        #총점
+    def total(self): 
+        return self._kor + self._eng + self._math
         
     @property        #평균
     def avg(self): 

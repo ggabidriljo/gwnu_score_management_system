@@ -27,6 +27,12 @@ class TestCar(unittest.TestCase):
 
     def test_math(self):
         self.assertEqual(80, self.my_score.math)
+
+    def test_total(self):
+        self.assertEqual(240, self.my_score.total)
+
+    def test_avg(self):
+        self.assertEqual(80, self.my_score.avg)
         
 
 if __name__ == "__main__":

@@ -28,7 +28,9 @@ class ScoreManagementSystem:
             result = result + item.name + ","
             result = result + str(int(item.kor)) + ","
             result = result + str(int(item.eng)) + ","
-            result = result + str(int(item.math)) + "\n"
+            result = result + str(int(item.math)) + ","
+            result = result + str(int(item.total)) + ","
+            result = result + str(int(item.avg)) + "\n"
         return result.strip()
 
     def sort(self, order_key="register", order_way="asc"):
